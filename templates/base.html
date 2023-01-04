@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <!-- ellapp CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>Hello, EllApp</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+{% include "navbar.html" %}
+<!-- Start of the block inserted into base template -->
+{% block content %}
+{% endblock %}
+<!-- End of the block inserted into base template -->
+<!-- Bootstrap JS -->
+<script src="{% static 'bootstrap.min.js' %}"></script>
+<!-- Start of javascript -->
+{% block script %}
+{% endblock %}
+<!-- End of javascript -->
+</body>
+</html>
